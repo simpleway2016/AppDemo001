@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppDemo"
+             x:Class="AppDemo.MainPage">
+
+    <Grid>
+        <Button Text="中文" BackgroundColor="AntiqueWhite" Clicked="zhCN_Click" WidthRequest="{local:Size 300}" HeightRequest="{local:Size 160}" HorizontalOptions="Start" VerticalOptions="Start" Margin="{local:Thickness 50/60/0/0}"></Button>
+        <Button Text="English" BackgroundColor="AntiqueWhite" Clicked="enUS_Click" WidthRequest="{local:Size 300}" HeightRequest="{local:Size 160}" HorizontalOptions="Start" VerticalOptions="Start" Margin="{local:Thickness 50/360/0/0}"></Button>
+
+        <FlexLayout Direction="Row" HeightRequest="{local:Size 150}" VerticalOptions="End">
+            <Label FlexLayout.Grow="1" Text="{Binding textres.items[首页]}" TextColor="#fff" FontSize="{local:Size 56}" BackgroundColor="#d7433b" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label FlexLayout.Grow="1" Text="{Binding textres.items[用户]}" TextColor="#fff" FontSize="{local:Size 56}" BackgroundColor="#67a524" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label FlexLayout.Grow="1" Text="{Binding textres.items[我的]}" TextColor="#fff" FontSize="{local:Size 56}" BackgroundColor="#566bd2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </FlexLayout>
+
+        <Grid BackgroundColor="#bfbfbf" WidthRequest="{local:Size 103}" HeightRequest="{local:Size 107}" Margin="{local:Thickness 0/320/0/0}" HorizontalOptions="End" VerticalOptions="Start"/>
+    </Grid>
+   
+</ContentPage>
